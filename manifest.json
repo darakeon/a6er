@@ -1,0 +1,27 @@
+{
+
+    "manifest_version": 2,
+    "name": "A6er",
+    "version": "1.0",
+  
+    "description": "To print 8 A6 pages at A4, printing 4 and 1 at front, 2 and 3 at back",
+  
+    "icons": {
+      "48": "icons/48.png",
+      "96": "icons/96.png"
+    },
+  
+    "content_scripts": [
+      {
+        "matches": ["*://*.mozilla.org/*"],
+        "js": ["a6er.js"]
+      }
+    ],
+
+    "browser_specific_settings": {
+      "gecko": {
+        "id": "a6er@darakeon"
+      }
+    }
+  
+  }
